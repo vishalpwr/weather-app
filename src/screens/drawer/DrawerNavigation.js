@@ -7,30 +7,39 @@ import CustomDrawer from './CustomDrawer';
 
 const Drawer = createDrawerNavigator();
 
-const DrawerNavigation = () => {
+const DrawerNav2 = () => {
   return (
     <Drawer.Navigator
       screenOptions={{
         drawerStyle: styles.drawerStyles,
+        drawerType: 'slide',
+        overlayColor: 'transparent',
+        swipeEdgeWidth: Platform.OS === 'android' && 180,
+        sceneContainerStyle: styles.sceneStyles,
+        headerShown: false,
       }}
       drawerContent={(props) => <CustomDrawer {...props} />}
     >
       {DrawerMenu.map((_, i) => (
-        <Drawer.Screen key={i}
-          name={_.route}
-          component={_.component}
+        <Drawer.Screen key={i} name={_.route} component={_.component}
+          options={{
+            item: _,
+          }}
         />
       ))}
     </Drawer.Navigator>
   )
 }
 
-export default DrawerNavigation
+export default DrawerNav2
 
 const styles = StyleSheet.create({
   drawerStyles: {
     width: 220,
     backgroundColor: colors.sceneBg,
     paddingTop: 40,
+  },
+  sceneStyles: {
+    backgroundColor: colors.sceneBg,
   },
 })
