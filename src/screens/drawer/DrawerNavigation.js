@@ -1,9 +1,10 @@
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import React from 'react'
 import { StyleSheet } from 'react-native'
-import { DrawerMenu } from '../arrays';
-import { colors } from '../constant';
+
+import { colors } from './constant';
 import CustomDrawer from './CustomDrawer';
+import { DrawerMenu } from './arrays';
 
 const Drawer = createDrawerNavigator();
 

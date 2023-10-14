@@ -28,17 +28,4 @@ export default {
     greenAlpha: 'rgba(96, 197, 168, 0.15)',
     purpleAlpha: 'rgba(146, 6, 228, 0.15)',
 
-
-    // bags background colors
-    bag1Bg: '#ea7a72',
-    bag2Bg: '#c2c5d1',
-    bag3Bg: '#82a7c9',
-    bag4Bg: '#d49d8f',
-    bag5Bg: '#ccd9c6',
-    bag6Bg: '#767676',
-    bag7Bg: '#d1c8c3',
-    bag8Bg: '#dca47f',
-    bag9Bg: '#eb849c',
-    bag10Bg: '#979dc1',
-    bag11Bg: '#c7d3c0',
 }

@@ -1,10 +1,10 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useRef } from 'react'
 import { useDrawerProgress } from '@react-navigation/drawer'
-import { colors, constant } from '../constant'
-import Icon, { Icons } from '../../../components/Icons'
 import Animated, { interpolate, useAnimatedStyle } from 'react-native-reanimated'
 import DrawerItemList from './DrawerItemList'
+import Icon, { Icons } from '../../components/Icons'
+import { colors, constant } from './constant'
 
 
 const CustomDrawer1 = (props) => {
@@ -61,7 +61,7 @@ const CustomDrawer1 = (props) => {
       <TouchableOpacity>
         <Animated.View
           style={[styles.row, styles.view, styles.marginBottom, viewStyles2('bottom')]}>
-          <Image style={styles.profile} source={require('../../../assets/images/avatar.png')} />
+          <Image style={styles.profile} source={require('../../assets/images/avatar.png')} />
           <View style={styles.textContainer}>
             <Text style={styles.headerTitle}>Kelsey Van</Text>
             <Text style={styles.text}>Software Engineer</Text>

@@ -1,7 +1,7 @@
 import { Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import { colors, constant } from '../constant'
-import Icon, { Icons } from '../../../components/Icons'
+import { colors, constant } from './constant'
+import Icon from '../../components/Icons'
 
 
 const DrawerItem = ({ label, onPress, tabBarTestID, type, name, notification,
